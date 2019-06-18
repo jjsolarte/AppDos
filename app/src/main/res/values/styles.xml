@@ -1,0 +1,24 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Personalizada application theme. -->
+    <style name="ThemeADSI" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="editTextColor">@color/icons</item>
+        <item name="android:textColorHint">@color/divider</item>
+        <item name="android:textColor">@color/icons</item>
+        <item name="android:background">@color/primary</item>
+        <item name="android:textColorPrimary">@color/icons</item>
+    </style>
+
+</resources>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registro"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/regTxtRegistro"
+        android:text="Registro"
+        android:textSize="@dimen/regTxtSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:id="@+id/regEdtNombre"
+        android:hint="Nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_below="@id/regTxtRegistro"
+        android:layout_marginBottom="10dp"/>
+    <EditText
+        android:id="@+id/regEdtApellido"
+        android:hint="Apellido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_below="@id/regEdtNombre"
+        android:layout_marginBottom="10dp"/>
+    <EditText
+        android:id="@+id/regEdtCorreo"
+        android:hint="Correo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:layout_below="@id/regEdtApellido"
+        android:layout_marginBottom="10dp"/>
+    <EditText
+        android:id="@+id/regEdtTelefono"
+        android:hint="Telefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_below="@id/regEdtCorreo"
+        android:layout_marginBottom="10dp"/>
+    <EditText
+        android:id="@+id/regEdtContra"
+        android:hint="Contraseña"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:layout_below="@id/regEdtTelefono"
+        android:layout_marginBottom="10dp"/>
+    <EditText
+        android:id="@+id/regEdtContra2"
+        android:hint="Repetir Contraseña"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:layout_below="@id/regEdtContra"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/regBtnGuardar"
+        android:onClick="onGuardarUser"
+        android:text="Guardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:background="@color/primary_dark"/>
+
+</RelativeLayout>

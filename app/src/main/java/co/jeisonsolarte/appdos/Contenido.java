@@ -15,7 +15,6 @@ public class Contenido extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contenido);
 
-
         imageView = findViewById(R.id.contImg);
 
         Picasso.get()

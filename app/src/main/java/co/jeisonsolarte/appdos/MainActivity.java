@@ -36,6 +36,9 @@ public class MainActivity extends AppCompatActivity {
                 
                 if (edtNombre.getText().toString().equals(nombre) && edtContr.getText().toString().equals(contraseña)){
                     Toast.makeText(MainActivity.this, "Bienvenido "+nombre, Toast.LENGTH_SHORT).show();
+                    Intent i = new Intent(MainActivity.this,Opciones.class);
+                    startActivity(i);
+
                 }else {
                     Toast.makeText(MainActivity.this, "Verificar Datos", Toast.LENGTH_SHORT).show();
                 }
@@ -51,5 +54,4 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
 }

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Opciones"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:text="Información a Seleccionar"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"/>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/opcRecicler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

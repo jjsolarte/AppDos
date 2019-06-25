@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@color/primary_light">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/itemImg"
+        android:background="@color/primary_light"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/deadpool"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/itemTitulo"
+        android:text="Titulo"
+        android:textSize="25sp"
+        android:textColor="@color/primary_dark"
+        android:textStyle="bold"
+        android:background="@color/primary_light"
+        android:layout_toRightOf="@id/itemImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/itemDescrip"
+        android:text="Descripción del Item"
+        android:textSize="20sp"
+        android:textColor="@color/primary"
+        android:background="@color/primary_light"
+        android:layout_below="@id/itemTitulo"
+        android:layout_toRightOf="@id/itemImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/itemEdad"
+        android:text="18"
+        android:textSize="20sp"
+        android:background="@color/primary_light"
+        android:textColor="@color/secondary_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"/>
+
+</RelativeLayout>

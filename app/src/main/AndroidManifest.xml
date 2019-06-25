@@ -2,22 +2,26 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="co.jeisonsolarte.appdos">
 
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/megasonic"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/megasonic"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Contenido"
-            android:theme="@style/ThemeADSI"></activity>
+        <activity
+            android:name=".Opciones"
+            android:theme="@style/ThemeADSI" />
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".Contenido"
+            android:theme="@style/ThemeADSI" />
         <activity
             android:name=".Registro"
             android:theme="@style/ThemeADSI" />
-        <activity
-            android:name=".MainActivity">
+        <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

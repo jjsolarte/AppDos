@@ -64,6 +64,15 @@
         </LinearLayout>
     </LinearLayout>
 
+    <TextView
+        android:text="1"
+        android:textSize="25sp"
+        android:textColor="@color/icons"
+        android:layout_margin="5dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:background="@drawable/backg" />
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="match_parent"

@@ -1,6 +1,8 @@
 package co.jeisonsolarte.appdos;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -49,7 +51,14 @@ public class Registro extends AppCompatActivity {
 
         Toast.makeText(this, "Usuario: "+usuario.getNombre()+" registro "+usuario.getCorreo(), Toast.LENGTH_SHORT).show();
 
-        Intent intent = new Intent(this,Contenido.class);
+        SharedPreferences pref = getSharedPreferences
+                ("MisPreferencias", Context.MODE_PRIVATE);
+
+        SharedPreferences.Editor edit = pref.edit();
+        edit.putString("nombre",""+edtNombre.getText().toString());
+        edit.commit();
+
+        Intent intent = new Intent(this,Opciones.class);
         startActivity(intent);
 
     }

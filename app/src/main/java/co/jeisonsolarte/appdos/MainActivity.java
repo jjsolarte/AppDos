@@ -1,6 +1,8 @@
 package co.jeisonsolarte.appdos;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -19,6 +21,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        verificarPreferencias();
 
         edtNombre = findViewById(R.id.mainEdtNombre);
         edtContr = findViewById(R.id.mainEdtContr);
@@ -53,5 +57,16 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+    }
+
+    private void verificarPreferencias() {
+        SharedPreferences pref = getSharedPreferences("MisPreferencias", Context.MODE_PRIVATE);
+        if (!pref.getString("nombre","sorry").equals("sorry")){
+            Intent i = new Intent(this,Opciones.class);
+            startActivity(i);
+            finish();
+        }
+
     }
 }

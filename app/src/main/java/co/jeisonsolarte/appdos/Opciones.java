@@ -1,10 +1,12 @@
 package co.jeisonsolarte.appdos;
 
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -31,6 +33,10 @@ public class Opciones extends AppCompatActivity {
         recyclerView.setAdapter(adapterOpciones); //como implementamos a la lista (Recycler) nuestro adaptador
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         adapterOpciones.notifyDataSetChanged(); //se actualiza el adaptador
+
+        SharedPreferences pref = getSharedPreferences("MisPreferencias",MODE_PRIVATE);
+        Toast.makeText(this, "Bienvenido "+pref.getString("nombre","Señor")
+                , Toast.LENGTH_SHORT).show();
 
     }
 
